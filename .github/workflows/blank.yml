@@ -23,16 +23,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Building!
+      - name: Checkout the repo and its submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Building and testing
         run: |
-          cd third-party/gtest && git checkout release-1.8.1 && cd ../..
           cmake -H. -B_build -DBUILD_TEST=ON
           cmake --build _build
           cmake --build _build --target test -- ARGS=--verbose
