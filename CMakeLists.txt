@@ -1,17 +1,18 @@
 # Copyright 2021 Fe-Ti <btm.007@mail.ru>
 
 cmake_minimum_required(VERSION 3.4)
+
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_DEMO "Build demo" OFF)
 option(BUILD_TEST "Build test" OFF)
 
-project(control_work)
+project(sqrt_lib)
 
 include_directories(include)
 set(LIB_SOURCE sources/sqrt.cpp)
-add_library(sqrt_lib ${LIB_SOURCE})
+add_library(${PROJECT_NAME} ${LIB_SOURCE})
 
 if(BUILD_DEMO)
 	set(DEMO_SOURCE examples/demo.cpp)
