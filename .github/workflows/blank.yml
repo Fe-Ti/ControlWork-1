@@ -26,7 +26,7 @@ jobs:
       - name: Checkout the repo and its submodules
         uses: actions/checkout@v2
       - name: Checkout submodule GTest
-        uses:  google/googletest@2fe3bd994b3189899d93f1d5a881e725e046fdc2
+        uses:  googletest/git-checkout-submodule-action@2fe3bd994b3189899d93f1d5a881e725e046fdc2
 
       # Runs a set of commands using the runners shell
       - name: Building and testing
