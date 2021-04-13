@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_DEMO "Build demo" OFF)
 option(BUILD_TEST "Build test" OFF)
 
-project(control_work)
+project(sqrt_lib)
 
 include_directories(include)
 set(LIB_SOURCE sources/sqrt.cpp)
