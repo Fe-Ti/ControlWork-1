@@ -1,1 +1,1 @@
-# ControlWork-1 ![Build Status](https://travis-ci.com/travis-ci/travis.rb.svg?branch=master)
+# ControlWork-1 ![GITHUB-BADGE](https://github.com/{username}/{repository}/workflows/{name}/badge.svg)
