@@ -12,7 +12,7 @@ project(sqrt_lib)
 
 include_directories(include)
 set(LIB_SOURCE sources/sqrt.cpp)
-add_library(sqrt_lib ${LIB_SOURCE})
+add_library(${PROJECT_NAME} ${LIB_SOURCE})
 
 if(BUILD_DEMO)
 	set(DEMO_SOURCE examples/demo.cpp)

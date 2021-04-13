@@ -7,7 +7,7 @@
 TEST(Sqrt, DoubleValue)
 {
 	double a = 4.;
-	double reference = 2.;
+	double ref = 2.;
 	double result = sqrt(a);
-	ASSERT_EQ(reference, result);
+	ASSERT_EQ(ref, result);
 }
