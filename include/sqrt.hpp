@@ -1,5 +1,7 @@
 #ifndef SQRT
 #define SQRT
+
+#include <cmath>
 double sqrt(double a);
-double sqrt(int a);
+
 #endif
